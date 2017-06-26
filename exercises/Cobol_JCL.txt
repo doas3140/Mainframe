@@ -1,0 +1,42 @@
+//userIDX  JOB ,                                                
+//         MSGCLASS=H,                                          
+//         MSGLEVEL=(1,1),                                      
+//         CLASS=A,                                             
+//         REGION=0M,                                           
+//         NOTIFY=&SYSUID                                       
+//COBOL1 EXEC IGYWCLG,REGION=50M,                               
+// PARM.COBOL='TEST,RENT,APOST,OBJECT,NODYNAM,LIB,SIZE(1048376)'
+//COBOL.STEPLIB DD DSN=IGY420.SIGYCOMP,                         
+// DISP=SHR                                                     
+//COBOL.SYSIN DD DISP=SHR,DSN=userID.KURS.COBOL(PROG1)         
+//GO.INPUTFIL DD DISP=SHR,DSN=userID.KURS.PLAYERS              
+
+
+//userIDX  JOB ,                                                
+//         MSGCLASS=H,                                          
+//         MSGLEVEL=(1,1),                                      
+//         CLASS=A,                                             
+//         REGION=0M,                                           
+//         NOTIFY=&SYSUID                                       
+//COBOL1 EXEC IGYWCLG,REGION=50M,                               
+// PARM.COBOL='TEST,RENT,APOST,OBJECT,NODYNAM,LIB,SIZE(1048376)'
+//COBOL.STEPLIB DD DSN=IGY420.SIGYCOMP,                         
+// DISP=SHR                                                     
+//COBOL.SYSIN DD DISP=SHR,DSN=userID.KURS.COBOL(PROG2)         
+//GO.INPUTFIL DD DISP=SHR,DSN=userID.KURS.PLAYERS              
+//GO.OUTFIL   DD DISP=SHR,DSN=userID.KURS.REPORT               
+
+
+//userIDX  JOB ,                                                
+//         MSGCLASS=H,                                          
+//         MSGLEVEL=(1,1),                                      
+//         CLASS=A,                                             
+//         REGION=0M,                                           
+//         NOTIFY=&SYSUID                                       
+//COBOL1 EXEC IGYWCLG,REGION=50M,                               
+// PARM.COBOL='TEST,RENT,APOST,OBJECT,NODYNAM,LIB,SIZE(1048376)'
+//COBOL.STEPLIB DD DSN=IGY420.SIGYCOMP,                         
+// DISP=SHR                                                     
+//COBOL.SYSIN DD DISP=SHR,DSN=userID.KURS.COBOL(PROG3)         
+//GO.INPUTFIL DD DISP=SHR,DSN=userID.KURS.ORDER                
+//GO.OUTFIL   DD DISP=SHR,DSN=userID.KURS.SUMMARY              
